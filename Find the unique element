@@ -1,0 +1,9 @@
+arr = [1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6]
+
+# loop through the array, skipping every second element
+for i in range(0, len(arr), 2):
+    # check if the current element is different from the next one
+    if arr[i] != arr[i+1]:
+        # found the unique element and its index
+        print("Unique element:", arr[i], "Index:", i)
+        break
