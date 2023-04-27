@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class SumPositiveIntegers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int number, sum = 0;
+
+        do {
+            System.out.print("Enter a positive integer (enter a negative integer to stop): ");
+            number = input.nextInt();
+
+            if (number >= 0) {
+                sum += number;
+            }
+        } while (number >= 0);
+
+        System.out.println("The sum of the positive integers entered is " + sum);
+    }
+}
