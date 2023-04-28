@@ -1,0 +1,13 @@
+# DSA-JAVA
+def is_even(num):
+    """Returns True if num is even, False otherwise."""
+    return num % 2 == 0
+
+# Prompt the user for a number to check
+num = int(input("Enter a number: "))
+
+# Check whether the number is even or odd using the is_even function
+if is_even(num):
+    print(num, "is even.")
+else:
+    print(num, "is odd.")
